@@ -49,7 +49,7 @@ git push -u origin main
 
 ### Step 4: Finalize Your Site
 
-Almost done! Access your GitHub repository online and go to Settings > Pages. Under "Source" select "Deploy from a branch," then select "main" under "Branch." Save your changes, and GitHub should now indicate that it's serving your website from the "main" branch.
+Almost done! Access your GitHub repository online and go to Settings > Pages. Under "Source" select "Deploy from a branch," then select "main" and "/docs" under "Branch." Save your changes, and GitHub should now indicate that it's serving your website from the "main" branch.
 
 Congratulations, you now have a working static site hosted on GitHub Pages! Your site should be accessible at `https://yourusername.github.io/site-name`.
 
