@@ -33,7 +33,7 @@ publishDir = 'docs'
 Since by default GitHub expects pages to be built with Jekyll, you'll also have to specify not to do that by adding a file called "nojekyll" in your directory root. To create the file using your terminal, run:
 
 ```pseudo
-touch docs/.nojekyll
+touch .nojekyll
 ```
 
 For additional site configuration settings, you can copy the `hugo.toml` file from the example site for your chosen theme and update the values according to your own preferences. Typically theme authors will include a full list of possible parameters in the documentation, so don't be afraid to experiment with customizing your site!
