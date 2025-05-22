@@ -6,7 +6,7 @@ BookSection = 'docs'
 
 # Hi there!
 ------
-This is a demo site built for practice using Hugo and hosted on GitHub Pages. The following pages document the process used in order to create this exact site. I'm still extremely new to everything Hugo has to offer, but I hope this site may prove helpful for any other newbies looking for simple, clear instructions on how to get started with Hugo.
+This is a demo site built for practice using Hugo and hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages). The following pages document the process used in order to create this exact site. I'm still extremely new to everything Hugo has to offer, but I hope this site may prove helpful for any other newbies looking for simple, clear instructions on how to get started with Hugo.
 
 If you're interested in recreating this site on your own, you'll need the following:
 

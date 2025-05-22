@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/demo-site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=demo-site/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Uploading Your Site Via GitHub Pages
+  #
+
+So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready to deploy it for all the world to see. There are a whole host of ways you can do so &ndash; check out all the ways listed on the Hugo site here &ndash; but for this tutorial, we&rsquo;re using GitHub Pages. This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you&rsquo;ve followed the tutorial up to this point.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/demo-site/docs/getting-your-site-online/">
+  <meta property="og:site_name" content="Demo Hugo Site">
+  <meta property="og:title" content="Installing a Theme">
+  <meta property="og:description" content="Uploading Your Site Via GitHub Pages#So you’ve finished building your site locally, and now you’re ready to deploy it for all the world to see. There are a whole host of ways you can do so – check out all the ways listed on the Hugo site here – but for this tutorial, we’re using GitHub Pages. This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you’ve followed the tutorial up to this point.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+<title>Installing a Theme | Demo Hugo Site</title>
+<link rel="icon" href="/demo-site/favicon.png" >
+<link rel="manifest" href="/demo-site/manifest.json">
+<link rel="canonical" href="http://localhost:1313/demo-site/docs/getting-your-site-online/">
+<link rel="stylesheet" href="/demo-site/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/demo-site/fuse.min.js"></script>
+  <script defer src="/demo-site/en.search.min.37404e3f934ba356d384a338cb908165fa2f2f4642f2d2f34737f92e61170473.js" integrity="sha256-N0BOP5NLo1bThKM4y5CBZfovL0ZC8tLzRzf5LmEXBHM=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/demo-site/docs/getting-your-site-online/index.xml" title="Demo Hugo Site" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/demo-site/"><span>Demo Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/optional-understanding-hugo/" class="">Optional: Intro to Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/creating-your-hugo-site/" class="">Creating Your Hugo Site</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/getting-your-site-online/" class="active">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/installing-a-theme/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/adding-content-pages/" class="">Adding Content Pages</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/misc-formatting/" class="">Basic Formatting</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/demo-site/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Installing a Theme</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="uploading-your-site-via-github-pages">
+  Uploading Your Site Via GitHub Pages
+  <a class="anchor" href="#uploading-your-site-via-github-pages">#</a>
+</h1>
+<p>So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready to deploy it for all the world to see. There are a whole host of ways you can do so &ndash; check out all the ways listed on the Hugo site <a href="https://gohugo.io/host-and-deploy/">here</a> &ndash; but for this tutorial, we&rsquo;re using <a href="https://pages.github.com/">GitHub Pages</a>. This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you&rsquo;ve followed the tutorial up to this point.</p>
+<h3 id="step-1-initialize-your-site-in-git">
+  Step 1: Initialize Your Site in Git
+  <a class="anchor" href="#step-1-initialize-your-site-in-git">#</a>
+</h3>
+<p>In Git, navigate to your site directory. Then run the following:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">git init
+git add .
+git commit -m &#34;Adding site to Git&#34;
+</code></pre><p>This creates an empty Git repository in your site directory and tells Git to start tracking your files.</p>
+<h3 id="step-2-create-and-link-a-github-repository">
+  Step 2: Create and Link a GitHub Repository
+  <a class="anchor" href="#step-2-create-and-link-a-github-repository">#</a>
+</h3>
+<p>To host your site on GitHub Pages you&rsquo;ll need a repository to store it. Log in to your GitHub account and click the + icon in the top right, then select &ldquo;New Repository.&rdquo; Give your repository the same name as your local Hugo directory &ndash; i.e., if the folder containing your site files is called &ldquo;Example Site,&rdquo; the corresponding repository on GitHub should also be called &ldquo;Example Site.&rdquo; Also set the repository to &ldquo;public&rdquo; and uncheck the box for &ldquo;Add a README file&rdquo; before creating it.</p>
+<p>Once your repository is created, GitHub will display an HTML link that ends in <code>.git</code>. Copy that link. Now you can link the repository you just created on GitHub to your local one with the following Git command, replacing the HTML link with the one you copied:</p>
+<pre tabindex="0"><code class="language-git" data-lang="git">git remote add origin https://github.com/yourusername/repo-name.git
+</code></pre><p>Additionally, you may need to rename your branch from &ldquo;master&rdquo; to &ldquo;main&rdquo; to match GitHub&rsquo;s default directory structure:</p>
+<pre tabindex="0"><code class="language-git" data-lang="git">git branch -M main
+</code></pre><h3 id="step-3-update-and-push-your-site">
+  Step 3: Update and Push Your Site
+  <a class="anchor" href="#step-3-update-and-push-your-site">#</a>
+</h3>
+<p>Open the Hugo config file in your local directory and replace the default <code>baseURL</code> value with the URL for your site. Since this will be a project page and not a user page, it should look something like <code>baseURL = 'https://username.github.io/site-name/'</code>.</p>
+<p>Save and commit your changes and run the <code>hugo</code> command to build the latest version of your site. When your site is finalized locally, you can push it to GitHub:</p>
+<pre tabindex="0"><code class="language-git" data-lang="git">git push -u origin main
+</code></pre><h3 id="step-4-finalize-your-site">
+  Step 4: Finalize Your Site
+  <a class="anchor" href="#step-4-finalize-your-site">#</a>
+</h3>
+<p>Almost done! Go to your GitHub repository online and go to Settings &gt; Pages. Under Source, select <code>main</code> under <code>Branch</code> and <code>/docs</code> under <code>Folder</code>. Save your changes, and GitHub should now serve your website from the <code>/docs</code> folder (it may take a minute or two for things to get online).</p>
+<p>Congratulations, you now have a working static site hosted on GitHub Pages! Your site should be accessible at <code>https://yourusername.github.io/site-name</code>.</p>
+<p>With just this basic Hugo and Git knowledge under your belt, you&rsquo;re ready to create some truly amazing webpages to show off your content. Thank you for reading this far! If you&rsquo;d like to learn some formatting tips for making your site look pretty, check out the <a href="http://localhost:1313/demo-site/docs/misc-formatting/" title="Misc Formatting">Misc Formatting</a> section for tips. Otherwise, to learn more about me and my projects, check out my personal page.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

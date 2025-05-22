@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/demo-site/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=demo-site/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Creating a Home Page
+  #
+
+For our very first addition to the site, let&rsquo;s add an index page. This is the first page users will see when they visit your site. New pages can be added to your Hugo site with this command:
+hugo new content content/_index.md
+This creates the _index.md Markdown file within the &ldquo;content&rdquo; folder of your Hugo directory. If you open the file in an editor, you&rsquo;ll see that it contains some editable metadata:">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/demo-site/docs/adding-content-pages/">
+  <meta property="og:site_name" content="Demo Hugo Site">
+  <meta property="og:title" content="Adding Content Pages">
+  <meta property="og:description" content="Creating a Home Page#For our very first addition to the site, let’s add an index page. This is the first page users will see when they visit your site. New pages can be added to your Hugo site with this command:
+hugo new content content/_index.md This creates the _index.md Markdown file within the “content” folder of your Hugo directory. If you open the file in an editor, you’ll see that it contains some editable metadata:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+<title>Adding Content Pages | Demo Hugo Site</title>
+<link rel="icon" href="/demo-site/favicon.png" >
+<link rel="manifest" href="/demo-site/manifest.json">
+<link rel="canonical" href="http://localhost:1313/demo-site/docs/adding-content-pages/">
+<link rel="stylesheet" href="/demo-site/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/demo-site/fuse.min.js"></script>
+  <script defer src="/demo-site/en.search.min.37404e3f934ba356d384a338cb908165fa2f2f4642f2d2f34737f92e61170473.js" integrity="sha256-N0BOP5NLo1bThKM4y5CBZfovL0ZC8tLzRzf5LmEXBHM=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/demo-site/docs/adding-content-pages/index.xml" title="Demo Hugo Site" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/demo-site/"><span>Demo Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/optional-understanding-hugo/" class="">Optional: Intro to Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/creating-your-hugo-site/" class="">Creating Your Hugo Site</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/getting-your-site-online/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/installing-a-theme/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/adding-content-pages/" class="active">Adding Content Pages</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/misc-formatting/" class="">Basic Formatting</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/demo-site/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Adding Content Pages</h3>
+
+  <label for="toc-control">
+    
+    <img src="/demo-site/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents"></nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="creating-a-home-page">
+  Creating a Home Page
+  <a class="anchor" href="#creating-a-home-page">#</a>
+</h1>
+<p>For our very first addition to the site, let&rsquo;s add an index page. This is the first page users will see when they visit your site. New pages can be added to your Hugo site with this command:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">hugo new content content/_index.md
+</code></pre><p>This creates the <code>_index.md</code> Markdown file within the &ldquo;content&rdquo; folder of your Hugo directory. If you open the file in an editor, you&rsquo;ll see that it contains some editable metadata:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">+++
+date = &#39;2020-02-02T20:20:20-02:00&#39;
+draft = true
+title = &#39;Welcome!&#39;
++++
+</code></pre><p>You can add body text after this metadata section; however, note that the <code>draft = true</code> value means that Hugo will not publish the page when you build the site. When you&rsquo;re done making your changes, remember to change the value of draft to <code>false</code> so users can actually see the page.</p>
+<p>For a full list of parameters that can be used in the front matter, refer to the <a href="https://github.com/alex-shpak/hugo-book/tree/master?tab=readme-ov-file#configuration">official documentation</a> for the Hugo Book theme under the &ldquo;Configuration&rdquo; section.</p>
+<p>The front matter for the home page of this site looks like this:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">+++
+date = &#39;2025-02-06T17:00:38-08:00&#39;
+title = &#39;Welcome to my demo site!&#39;
+BookSection = &#39;docs&#39;
++++
+</code></pre><h1 id="additional-content-pages">
+  Additional Content Pages
+  <a class="anchor" href="#additional-content-pages">#</a>
+</h1>
+<p>The above process can be repeated to create additional pages in your site. The sections of this site, for example, consist of a series of folders nested under the <code>/content/docs</code> folder. Each subfolder contains an <code>_index.md</code> file that makes up the written content for each page.</p>
+<p>The resulting content tree looks like this:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">content
+├── docs
+│   ├── optional-understanding-hugo
+│   │   ├── _index.md
+│   ├── creating-your-hugo-site
+│   │   ├── _index.md
+│   └── installing-a-theme
+│   │   ├── _index.md
+│   └── adding-content-pages
+│   │   ├── _index.md
+│   └── getting-your-site-online
+│   │   ├── _index.md
+│   └── misc-formatting
+│       ├── _index.md
+└── _index.md
+</code></pre><p>If you don&rsquo;t want a page to appear in the sidebar, you can specify that in the front matter with the <code>toc_hide</code> flag:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">toc_hide: true
+</code></pre><p>One thing to note about page names and how they&rsquo;re reflected in the site URL &ndash; when Hugo finds an index.md file it will use the name of its container folder as the post name. If a Markdown file is named anything other than index.md, that will be the post name. This means each of the following will render different:</p>
+<ul>
+<li><code>/content/docs/example1/_index.md</code> will render as <code>baseurl.com/docs/example1/</code></li>
+<li><code>/content/docs/example2.md</code> will render as <code>baseurl.com/docs/example2/</code></li>
+<li><code>/content/docs/example3/test.md</code> will render as <code>baseurl.com/docs/test/</code></li>
+</ul>
+<p>If you want your URLs to follow a certain format, keep these differences in mind when organizing and naming folders in your directory.</p>
+<p>At this point you&rsquo;ve created your Hugo site, installed a theme, and added content. Now it&rsquo;s time for the final step &ndash; <a href="http://localhost:1313/demo-site/docs/getting-your-site-online/" title="Getting Your Site Online">Getting Your Site Online</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents"></nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

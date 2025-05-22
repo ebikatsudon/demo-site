@@ -7,7 +7,7 @@ weight = 30
 
 # Uploading Your Site Via GitHub Pages
 
-So you've finished building your site locally, and now you're ready to deploy it for all the world to see. There are a whole host of ways you can do so -- check out all the ways listed on the Hugo site [here](https://gohugo.io/host-and-deploy/) -- but for this tutorial, we're using [GitHub Pages](https://pages.github.com/). This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you've followed the tutorial up until this point.
+So you've finished building your site locally, and now you're ready to deploy it for all the world to see. There are a whole host of ways you can do so -- check out all the ways listed on the Hugo site [here](https://gohugo.io/host-and-deploy/) -- but for this tutorial, we're using [GitHub Pages](https://pages.github.com/). This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you've followed the tutorial up to this point.
 
 ### Step 1: Initialize Your Site in Git
 
@@ -21,24 +21,33 @@ git commit -m "Adding site to Git"
 
 This creates an empty Git repository in your site directory and tells Git to start tracking your files.
 
-### Step 2: Create a GitHub Repository
+### Step 2: Create and Link a GitHub Repository
 
-To host your site on GitHub Pages you'll need to create a repository for it. Log in to your GitHub account and click the + icon in the top right, then select "New Repository." Give your repository the same name as your local Hugo directory -- i.e., if the folder containing your site files is called "Example Site," the corresponding repository on GitHub should also be called "Example Site." Also set the repository to "public" and uncheck the box for "Add a README file" before creating it.
+To host your site on GitHub Pages you'll need a repository to store it. Log in to your GitHub account and click the + icon in the top right, then select "New Repository." Give your repository the same name as your local Hugo directory -- i.e., if the folder containing your site files is called "Example Site," the corresponding repository on GitHub should also be called "Example Site." Also set the repository to "public" and uncheck the box for "Add a README file" before creating it.
 
-Once your repository is created, GitHub will display an HTML link that should end in `.git`. Copy that link, then navigate to the `hugo.toml` config file for your site in your local directory. Open the config file in your editor of choice and update the `baseURL` key with the HTML link you just copied.
-
-Now you'll want to commit your changes and push your local site to your GitHub repository. To do so, first link the repository you just created on GitHub to your local one with the following command in Git bash:
+Once your repository is created, GitHub will display an HTML link that ends in `.git`. Copy that link. Now you can link the repository you just created on GitHub to your local one with the following Git command, replacing the HTML link with the one you copied:
 
 ```git
 git remote add origin https://github.com/yourusername/repo-name.git
 ```
 
-Then rename your master branch to main to match GitHub's default structure, and push the contents of your site to GitHub:
+Additionally, you may need to rename your branch from "master" to "main" to match GitHub's default directory structure:
 
 ```git
 git branch -M main
+```
+
+### Step 3: Update and Push Your Site
+
+Open the Hugo config file in your local directory and replace the default `baseURL` value with the URL for your site. Since this will be a project page and not a user page, it should look something like `baseURL = 'https://username.github.io/site-name/'`.
+
+Save and commit your changes and run the `hugo` command to build the latest version of your site. When your site is finalized locally, you can push it to GitHub:
+
+```git
 git push -u origin main
 ```
+
+### Step 4: Finalize Your Site
 
 Almost done! Go to your GitHub repository online and go to Settings > Pages. Under Source, select `main` under `Branch` and `/docs` under `Folder`. Save your changes, and GitHub should now serve your website from the `/docs` folder (it may take a minute or two for things to get online).
 
