@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Now that you know how to create a Hugo site and add pages to it, you&rsquo;ve got the fundamentals down! Below are some more advanced steps to help you customize your site:
+
+  Configuring menu and misc UI elements
+  #
+
+The Book theme will automatically generate a navigation menu on the left of your site. By default sections in this menu are ordered alphabetically based on the title assigned in the front matter, but you can manually specify the order by using page weights.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/misc-formatting/">
+  <meta property="og:site_name" content="Demo Hugo Site">
+  <meta property="og:title" content="Basic Formatting">
+  <meta property="og:description" content="Now that you know how to create a Hugo site and add pages to it, you’ve got the fundamentals down! Below are some more advanced steps to help you customize your site:
+Configuring menu and misc UI elements#The Book theme will automatically generate a navigation menu on the left of your site. By default sections in this menu are ordered alphabetically based on the title assigned in the front matter, but you can manually specify the order by using page weights.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+<title>Basic Formatting | Demo Hugo Site</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/misc-formatting/">
+<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.ca1979a268abef3f9d568bbcb388ae14817b3c0bc0bbcac42e995f16e0ca29b0.js" integrity="sha256-yhl5omir7z&#43;dVou8s4iuFIF7PAvAu8rELplfFuDKKbA=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/misc-formatting/index.xml" title="Demo Hugo Site" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Demo Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/optional-understanding-hugo/" class="">Optional: Intro to Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/creating-your-hugo-site/" class="">Creating Your Hugo Site</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getting-your-site-online/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installing-a-theme/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/adding-content-pages/" class="">Adding Content Pages</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/misc-formatting/" class="active">Basic Formatting</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Basic Formatting</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#configuring-menu-and-misc-ui-elements">Configuring menu and misc UI elements</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>Now that you know how to create a Hugo site and add pages to it, you&rsquo;ve got the fundamentals down! Below are some more advanced steps to help you customize your site:</p>
+<h2 id="configuring-menu-and-misc-ui-elements">
+  Configuring menu and misc UI elements
+  <a class="anchor" href="#configuring-menu-and-misc-ui-elements">#</a>
+</h2>
+<p>The Book theme will automatically generate a navigation menu on the left of your site. By default sections in this menu are ordered alphabetically based on the title assigned in the front matter, but you can manually specify the order by using <strong>page weights</strong>.</p>
+<p>The <code>weight</code> parameter for a page determines its order in a collection when sorted by weight. Pages with &ldquo;lighter&rdquo; (i.e. smaller) weights will appear at the top, while those with &ldquo;heavier&rdquo; or unassigned weights will appear at the bottom of the list. Page weights are assigned in the front matter and can be any non-zero integer.</p>
+<p>Since each page in this demo site is meant to represent a step in a process, they should be arranged in the menu in chronological order. To do so, add a weight parameter in the front matter of each index page. For ease of understanding, we&rsquo;ll use multiples of 10 for each page weight. Below is an example of what the front matter looks like for the very first section in this site:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">date = &#39;2025-02-06T17:00:38-08:00&#39;
+title = &#39;Optional: Understanding Hugo&#39;
+BookSection = &#39;docs&#39;
+weight = 10
+</code></pre><p>To cross-reference other sections or pages in your site within the body text of a page, you can use either the <code>ref</code> or <code>relref</code> <a href="https://gohugobrasil.netlify.app/content-management/shortcodes/#using-the-built-in-shortcodes">shortcodes</a>. The only difference between the two is whether the resulting URL is absolute (e.g. <a href="http://example.com/about">http://example.com/about</a>) or relative to the current page (e.g. /about/).</p>
+<p>The syntax for <code>ref</code> and <code>relref</code> is as follows:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">{{&lt; ref &#34;example.md&#34; &gt;}}
+{{&lt; ref &#34;#anchor&#34; &gt;}}
+{{&lt; ref &#34;example.md#anchor&#34; &gt;}}
+{{&lt; relref &#34;example.md&#34; &gt;}}
+{{&lt; relref &#34;#anchor&#34; &gt;}}
+{{&lt; relref &#34;example.md#anchor&#34; &gt;}}
+</code></pre><p><code>ref</code> and <code>relref</code> can also be used in with Markdown to to create a hyperlinks. A hyperlink that references the &ldquo;Creating Your Hugo Site&rdquo; page, for example, would look like the following in Markdown:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">[Creating Your Hugo Site](http://localhost:1313/docs/creating-your-hugo-site/ &#34;Creating Your Hugo Site&#34;) 
+</code></pre><p>One caveat is that you cannot reference <code>_index.md</code> files this way &ndash; instead, the path must point to the folder it is in. So if I wanted to create a link to the home page of this site, I would use this:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">[This is a link to the home page](http://localhost:1313/docs/ &#34;Home Page&#34;) 
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#configuring-menu-and-misc-ui-elements">Configuring menu and misc UI elements</a></li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

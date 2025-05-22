@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Understanding Hugo and static site generators
+  #
+
+The following information isn&rsquo;t necessary for installing Hugo, but may be interesting for anyone who plans on deepening their understanding of site generators and what&rsquo;s happening in the backend.
+Hugo is a static site generator (abbreviated SSG), meaning it creates web pages with fixed, hard-coded (hence static) content that will not change unless the source code is changed. Each page on a static site is represented by an .html file on the server, and any given page will look the same to every person who accesses it.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/optional-understanding-hugo/">
+  <meta property="og:site_name" content="Demo Hugo Site">
+  <meta property="og:title" content="Optional: Intro to Hugo">
+  <meta property="og:description" content="Understanding Hugo and static site generators#The following information isn’t necessary for installing Hugo, but may be interesting for anyone who plans on deepening their understanding of site generators and what’s happening in the backend.
+Hugo is a static site generator (abbreviated SSG), meaning it creates web pages with fixed, hard-coded (hence static) content that will not change unless the source code is changed. Each page on a static site is represented by an .html file on the server, and any given page will look the same to every person who accesses it.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+<title>Optional: Intro to Hugo | Demo Hugo Site</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/optional-understanding-hugo/">
+<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.ca1979a268abef3f9d568bbcb388ae14817b3c0bc0bbcac42e995f16e0ca29b0.js" integrity="sha256-yhl5omir7z&#43;dVou8s4iuFIF7PAvAu8rELplfFuDKKbA=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/optional-understanding-hugo/index.xml" title="Demo Hugo Site" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Demo Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/optional-understanding-hugo/" class="active">Optional: Intro to Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/creating-your-hugo-site/" class="">Creating Your Hugo Site</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getting-your-site-online/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installing-a-theme/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/adding-content-pages/" class="">Adding Content Pages</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/misc-formatting/" class="">Basic Formatting</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Optional: Intro to Hugo</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="understanding-hugo-and-static-site-generators">
+  Understanding Hugo and static site generators
+  <a class="anchor" href="#understanding-hugo-and-static-site-generators">#</a>
+</h1>
+<p>The following information isn&rsquo;t necessary for installing Hugo, but may be interesting for anyone who plans on deepening their understanding of site generators and what&rsquo;s happening in the backend.</p>
+<p>Hugo is a <strong>static site generator</strong> (abbreviated SSG), meaning it creates web pages with fixed, hard-coded (hence <em>static</em>) content that will not change unless the source code is changed. Each page on a static site is represented by an <code>.html</code> file on the server, and any given page will look the same to every person who accesses it.</p>
+<p>In comparison, <em>dynamic</em> site generators (such as Wordpress) rely on server-side languages and databases to display varying content in real time. This content can change based on different factors, such as time of day when the site is accessed or user interactions. The custom &ldquo;For You&rdquo; page on social media sites like X or Instagram, for example, are dynamic pages.</p>
+<p>SSGs like Hugo work by converting plain text files to static site assets (HTML, CSS, or JavaScript files) using a template. When accessing a static site, the resulting web page is pre-rendered, cached, and served to the user. This results in faster load times, improved security (no dynamic content or databases that could be hacked), and less maintenance required.</p>
+<p>With that high-level overview out of the way, let&rsquo;s get started on using Hugo to create your own static site.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

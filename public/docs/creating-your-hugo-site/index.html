@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+  Creating Your Hugo Site
+  #
+
+This section will cover how to structure your file directory for Hugo, as well as how to manually download and install the program.
+
+  Step 1: Set up your Hugo file directory
+  #
+
+Before installing Hugo, set up the directory in whichCreate a folder named bin in your user directory such that the file path is C:\Users\YOUR_USERNAME\bin. You&rsquo;ll want to add this new bin folder to your system&rsquo;s PATH environment variable now so that when you run Hugo commands later, you won&rsquo;t have to specify the entire path every time.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/creating-your-hugo-site/">
+  <meta property="og:site_name" content="Demo Hugo Site">
+  <meta property="og:title" content="Creating Your Hugo Site">
+  <meta property="og:description" content="Creating Your Hugo Site#This section will cover how to structure your file directory for Hugo, as well as how to manually download and install the program.
+Step 1: Set up your Hugo file directory#Before installing Hugo, set up the directory in whichCreate a folder named bin in your user directory such that the file path is C:\Users\YOUR_USERNAME\bin. You’ll want to add this new bin folder to your system’s PATH environment variable now so that when you run Hugo commands later, you won’t have to specify the entire path every time.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+<title>Creating Your Hugo Site | Demo Hugo Site</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/creating-your-hugo-site/">
+<link rel="stylesheet" href="/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.ca1979a268abef3f9d568bbcb388ae14817b3c0bc0bbcac42e995f16e0ca29b0.js" integrity="sha256-yhl5omir7z&#43;dVou8s4iuFIF7PAvAu8rELplfFuDKKbA=" crossorigin="anonymous"></script>
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/creating-your-hugo-site/index.xml" title="Demo Hugo Site" />
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Demo Hugo Site</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/optional-understanding-hugo/" class="">Optional: Intro to Hugo</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/creating-your-hugo-site/" class="active">Creating Your Hugo Site</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/getting-your-site-online/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/installing-a-theme/" class="">Installing a Theme</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/adding-content-pages/" class="">Adding Content Pages</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/misc-formatting/" class="">Basic Formatting</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>Creating Your Hugo Site</h3>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="creating-your-hugo-site">
+  Creating Your Hugo Site
+  <a class="anchor" href="#creating-your-hugo-site">#</a>
+</h1>
+<p>This section will cover how to structure your file directory for Hugo, as well as how to manually download and install the program.</p>
+<h3 id="step-1-set-up-your-hugo-file-directory">
+  Step 1: Set up your Hugo file directory
+  <a class="anchor" href="#step-1-set-up-your-hugo-file-directory">#</a>
+</h3>
+<p>Before installing Hugo, set up the directory in whichCreate a folder named <code>bin</code> in your user directory such that the file path is <code>C:\Users\YOUR_USERNAME\bin</code>. You&rsquo;ll want to add this new <code>bin</code> folder to your system&rsquo;s PATH environment variable now so that when you run Hugo commands later, you won&rsquo;t have to specify the entire path every time.</p>
+<p>Whenever you edit your PATH, however, it&rsquo;s recommended to first create a backup:</p>
+<ol>
+<li>Navigate to <code>System Properties</code> -&gt; <code>Advanced system settings</code> -&gt; <code>Advanced</code> tab -&gt; <code>Environment Variables</code>.</li>
+<li>Select the <code>PATH</code> variable under &ldquo;System Variables.&rdquo; Click &ldquo;Edit,&rdquo; then &ldquo;Edit text.&rdquo; Copy the entire value in &ldquo;Variable value&rdquo; and paste it into a text file editor such as Notepad.</li>
+<li>Save the file. If you need to restore the PATH, you can copy+paste the text back into the &ldquo;Variable value.&rdquo;</li>
+</ol>
+<p>Now that your PATH is backed up, open the command line as administrator. To add your newly-created bin folder to the PATH, run the following:
+<code>setx PATH &quot;C:\Users\YOUR_USERNAME\bin;%PATH%&quot;</code>. You can check if the directory was added successfully by running <code>echo %PATH%</code>, which will output the full value.</p>
+<h3 id="step-2-download-and-install-hugo">
+  Step 2: Download and install Hugo
+  <a class="anchor" href="#step-2-download-and-install-hugo">#</a>
+</h3>
+<p>Now that you&rsquo;ve created the directory for Hugo, it&rsquo;s time to actually download and install it. There are two main ways to install Hugo:</p>
+<ol>
+<li>Use a package manager such as <a href="https://chocolatey.org/">Chocolatey</a> or <a href="https://scoop.sh/">Scoop</a> to handle the whole installation process for you</li>
+<li>Manually download and install Hugo from the <a href="https://github.com/gohugoio/hugo/releases/tag/v0.142.0">official Github repository</a></li>
+</ol>
+<p>To minimize the amount of programs you need to deal with, this guide will only cover the manual installation method. For a comprehensive step-by-step guide on installing Hugo via a package manager, Bryce Wray has a <a href="https://www.brycewray.com/posts/2022/07/really-getting-started-hugo/">great writeup</a> on his site.</p>
+<blockquote>
+<p>Note: When downloading Hugo, it&rsquo;s almost always recommended to get the <strong>extended version</strong>.</p>
+</blockquote>
+<p>Download the extended version of Hugo from the repository and extract its contents. Then move the <code>hugo.exe</code> file to the bin folder you created in the previous step.</p>
+<h3 id="step-3-check-that-your-installation-was-successful">
+  Step 3: Check that your installation was successful
+  <a class="anchor" href="#step-3-check-that-your-installation-was-successful">#</a>
+</h3>
+<p>To confirm that Hugo is now in the PATH, run the following in the command line: <code>hugo version</code>. The output should show the version of Hugo you installed.</p>
+<p>Here&rsquo;s an example output:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">hugo v0.142.0-1f746a872442e66b6afd47c8c04ac42dc92cdb6f+extended windows/amd64 BuildDate=2025-01-22T12:20:52Z VendorInfo=gohugoio
+</code></pre><h3 id="step-4-initialize-your-hugo-site">
+  Step 4: Initialize your Hugo site
+  <a class="anchor" href="#step-4-initialize-your-hugo-site">#</a>
+</h3>
+<p>Now that Hugo is installed, you can start creating your new website. In this tutorial we&rsquo;ll call the new site <code>demo-site</code>, but you can name it however you like.</p>
+<p>To create your Hugo site, open Git and run the following: <code>hugo new site demo-site</code>.</p>
+<p>If the site is created successfully, you&rsquo;ll get a message instructing you to install a theme as your next step.</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">PS C:\Users\Username&gt; hugo new site demo-site
+Congratulations! Your new Hugo site was created in C:\Users\Username\demo-site.
+
+Just a few more steps...
+
+1. Change the current directory to C:\Users\Username\demo-site.
+2. Create or install a theme:
+   - Create a new theme with the command &#34;hugo new theme &lt;THEMENAME&gt;&#34;
+   - Or, install a theme from https://themes.gohugo.io/
+3. Edit hugo.toml, setting the &#34;theme&#34; property to the theme name.
+4. Create new content with the command &#34;hugo new content &lt;SECTIONNAME&gt;\&lt;FILENAME&gt;.&lt;FORMAT&gt;&#34;.
+5. Start the embedded web server with the command &#34;hugo server --buildDrafts&#34;.
+
+See documentation at https://gohugo.io/.
+</code></pre><p>Now, run <code>git init</code> to create an empty Git repository in your site directory. This will be important later when you publish your site via GitHub Pages.</p>
+<h2 id="testing-your-site">
+  Testing your site
+  <a class="anchor" href="#testing-your-site">#</a>
+</h2>
+<p>To check if your site has been initialized properly, run <code>hugo server</code> in your console. This will start up your site, which can be accessed at <code>http://localhost:1313</code>.</p>
+<p>Congratulations, you&rsquo;ve officially created your first Hugo site! Right now it&rsquo;s basically a blank canvas &ndash; let&rsquo;s add some pizzazz to it by installing a theme. To learn how to do so, proceed to the next section, <a href="http://localhost:1313/docs/installing-a-theme/" title="Installing a Theme">Installing a Theme</a>.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
