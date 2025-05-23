@@ -1,8 +1,8 @@
 +++
 date = '2025-02-06T17:00:38-08:00'
-title = 'Installing a Theme'
+title = 'Getting Your Site Online'
 BookToC = false
-weight = 30
+weight = 40
 +++
 
 # Uploading Your Site Via GitHub Pages
@@ -55,3 +55,12 @@ Congratulations, you now have a working static site hosted on GitHub Pages! Your
 
  With just this basic Hugo and Git knowledge under your belt, you're ready to create some truly amazing webpages to show off your content. Thank you for reading this far! If you'd like to learn some formatting tips for making your site look pretty, check out the [Misc Formatting]({{< ref "/docs/misc-formatting" >}} "Misc Formatting") section for tips. Otherwise, to learn more about me and my projects, check out my personal page.
 
+ ### Bonus: How to Update Your Site in the Future
+
+You can easily make changes to your site even after it's been published on GitHub Pages. The process essentially just involves repeating the last few steps you did to deploy it in the first place:
+
+1. Add and commit your changes locally
+2. Run `hugo` to rebuild the site
+3. `git push` to the remote repository
+
+After that, your changes should be reflected online shortly.
