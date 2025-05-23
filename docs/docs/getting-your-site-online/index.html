@@ -12,17 +12,17 @@ So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready 
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/">
   <meta property="og:site_name" content="Demo Hugo Site">
-  <meta property="og:title" content="Installing a Theme">
+  <meta property="og:title" content="Getting Your Site Online">
   <meta property="og:description" content="Uploading Your Site Via GitHub Pages#So you’ve finished building your site locally, and now you’re ready to deploy it for all the world to see. There are a whole host of ways you can do so – check out all the ways listed on the Hugo site here – but for this tutorial, we’re using GitHub Pages. This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you’ve followed the tutorial up to this point.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
-<title>Installing a Theme | Demo Hugo Site</title>
+<title>Getting Your Site Online | Demo Hugo Site</title>
 <link rel="icon" href="/demo-site/favicon.png" >
 <link rel="manifest" href="/demo-site/manifest.json">
 <link rel="canonical" href="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/">
 <link rel="stylesheet" href="/demo-site/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
   <script defer src="/demo-site/fuse.min.js"></script>
-  <script defer src="/demo-site/en.search.min.9dc7471c97a893b865f804ed3716543254d392fcbd25d0c03b8622e7e5947fde.js" integrity="sha256-ncdHHJeok7hl&#43;ATtNxZUMlTTkvy9JdDAO4Yi5&#43;WUf94=" crossorigin="anonymous"></script>
+  <script defer src="/demo-site/en.search.min.2398542b29a89d166420347b3b26e5937ec5f44a8242d6f136a9652be89fbd44.js" integrity="sha256-I5hUKymonRZkIDR7Oyblk37F9EqCQtbxNqllK&#43;ifvUQ=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/index.xml" title="Demo Hugo Site" />
 <!--
 Made with Book Theme
@@ -111,24 +111,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/demo-site/docs/getting-your-site-online/" class="active">Installing a Theme</a>
-  
-
-          
-  <ul>
-    
-  </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/demo-site/docs/installing-a-theme/" class="">Installing a Theme</a>
   
 
@@ -148,6 +130,24 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/demo-site/docs/adding-content-pages/" class="">Adding Content Pages</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/demo-site/docs/getting-your-site-online/" class="active">Getting Your Site Online</a>
   
 
           
@@ -211,7 +211,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/demo-site/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <h3>Installing a Theme</h3>
+  <h3>Getting Your Site Online</h3>
 
   <label for="toc-control">
     
@@ -262,6 +262,17 @@ git commit -m &#34;Adding site to Git&#34;
 <p>Almost done! Access your GitHub repository online and go to Settings &gt; Pages. Under &ldquo;Source&rdquo; select &ldquo;Deploy from a branch,&rdquo; then select &ldquo;main&rdquo; and &ldquo;/docs&rdquo; under &ldquo;Branch.&rdquo; Save your changes, and GitHub should now indicate that it&rsquo;s serving your website from the &ldquo;main&rdquo; branch.</p>
 <p>Congratulations, you now have a working static site hosted on GitHub Pages! Your site should be accessible at <code>https://yourusername.github.io/site-name</code>.</p>
 <p>With just this basic Hugo and Git knowledge under your belt, you&rsquo;re ready to create some truly amazing webpages to show off your content. Thank you for reading this far! If you&rsquo;d like to learn some formatting tips for making your site look pretty, check out the <a href="https://ebikatsudon.github.io/demo-site/docs/misc-formatting/" title="Misc Formatting">Misc Formatting</a> section for tips. Otherwise, to learn more about me and my projects, check out my personal page.</p>
+<h3 id="bonus-how-to-update-your-site-in-the-future">
+  Bonus: How to Update Your Site in the Future
+  <a class="anchor" href="#bonus-how-to-update-your-site-in-the-future">#</a>
+</h3>
+<p>You can easily make changes to your site even after it&rsquo;s been published on GitHub Pages. The process essentially just involves repeating the last few steps you did to deploy it in the first place:</p>
+<ol>
+<li>Add and commit your changes locally</li>
+<li>Run <code>hugo</code> to rebuild the site</li>
+<li><code>git push</code> to the remote repository</li>
+</ol>
+<p>After that, your changes should be reflected online shortly.</p>
 </article>
  
       
