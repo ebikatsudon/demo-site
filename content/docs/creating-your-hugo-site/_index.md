@@ -69,10 +69,8 @@ Just a few more steps...
 See documentation at https://gohugo.io/.
 ```
 
-Now, run `git init` to create an empty Git repository in your site directory. This will be important later when you publish your site via GitHub Pages.
-
 ## Testing your site
 
-To check if your site has been initialized properly, run `hugo server` in your console. This will start up your site, which can be accessed at `http://localhost:1313`.
+To check if your site has been initialized properly, navigate to your newly-created directory in your console and run `hugo server` to build your site and run it locally. You can then view your site at `http://localhost:1313`.
 
 Congratulations, you've officially created your first Hugo site! Right now it's basically a blank canvas -- let's add some pizzazz to it by installing a theme. To learn how to do so, proceed to the next section, [Installing a Theme]({{< ref "/docs/installing-a-theme" >}} "Installing a Theme").
