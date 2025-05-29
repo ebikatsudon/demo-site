@@ -15,4 +15,4 @@ In comparison, _dynamic_ site generators (such as Wordpress) rely on server-side
 
 SSGs like Hugo work by converting plain text files to static site assets (HTML, CSS, or JavaScript files) using a template. When accessing a static site, the resulting web page is pre-rendered, cached, and served to the user. This results in faster load times, improved security (no dynamic content or databases that could be hacked), and less maintenance required.
 
-With that high-level overview out of the way, let's get started on using Hugo to create your own static site.
+With that high-level overview out of the way, let's get started on using Hugo to create your own static site. Click on [Creating Your Hugo Site]({{< ref "/docs/creating-your-hugo-site" >}} "Creating Your Hugo Site") in the sidebar to get started!

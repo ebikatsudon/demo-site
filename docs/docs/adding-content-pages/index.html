@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="
-  Creating a Home Page
+  Adding Content to Your Site
   #
 
-For our very first addition to the site, let&rsquo;s add an index page. This is the first page users will see when they visit your site. New pages can be added to your Hugo site with this command:
-hugo new content content/_index.md
-This creates the _index.md Markdown file within the &ldquo;content&rdquo; folder of your Hugo directory. If you open the file in an editor, you&rsquo;ll see that it contains some editable metadata:">
+All content in a Hugo site is stored in a top-level content/ folder. Easy, right? From there, you can create collections of static pages by structuring them in various subfolders, or sections. For example, you could have an &ldquo;about me&rdquo; section and a blog section.
+
+Note: In order for Hugo to define a folder as a section, it must contain an index file called _index.md. (Don&rsquo;t forget the underscore!) This is called a branch bundle, and tells Hugo to create a navigable URL for that section and any nested folders within.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://ebikatsudon.github.io/demo-site/docs/adding-content-pages/">
   <meta property="og:site_name" content="Demo Hugo Site">
   <meta property="og:title" content="Adding Content Pages">
-  <meta property="og:description" content="Creating a Home Page#For our very first addition to the site, let’s add an index page. This is the first page users will see when they visit your site. New pages can be added to your Hugo site with this command:
-hugo new content content/_index.md This creates the _index.md Markdown file within the “content” folder of your Hugo directory. If you open the file in an editor, you’ll see that it contains some editable metadata:">
+  <meta property="og:description" content="Adding Content to Your Site#All content in a Hugo site is stored in a top-level content/ folder. Easy, right? From there, you can create collections of static pages by structuring them in various subfolders, or sections. For example, you could have an “about me” section and a blog section.
+Note: In order for Hugo to define a folder as a section, it must contain an index file called _index.md. (Don’t forget the underscore!) This is called a branch bundle, and tells Hugo to create a navigable URL for that section and any nested folders within.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 <title>Adding Content Pages | Demo Hugo Site</title>
@@ -25,7 +25,7 @@ hugo new content content/_index.md This creates the _index.md Markdown file with
 <link rel="canonical" href="https://ebikatsudon.github.io/demo-site/docs/adding-content-pages/">
 <link rel="stylesheet" href="/demo-site/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
   <script defer src="/demo-site/fuse.min.js"></script>
-  <script defer src="/demo-site/en.search.min.fc7ba6fa0e6c756d3aef024fa61d887ae46f7e253857c18c3a3329400088e277.js" integrity="sha256-/Hum&#43;g5sdW067wJPph2IeuRvfiU4V8GMOjMpQACI4nc=" crossorigin="anonymous"></script>
+  <script defer src="/demo-site/en.search.min.30091a5d05b288b36477d80824c47fa92f1c865a37bcdbc6180478bf95c94b4b.js" integrity="sha256-MAkaXQWyiLNkd9gIJMR/qS8chlo3vNvGGAR4v5XJS0s=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://ebikatsudon.github.io/demo-site/docs/adding-content-pages/index.xml" title="Demo Hugo Site" />
 <!--
 Made with Book Theme
@@ -228,7 +228,13 @@ https://github.com/alex-shpak/hugo-book
   <aside class="hidden clearfix">
     
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-create-an-index-page">How to create an index page</a></li>
+    <li><a href="#adding-additional-content">Adding additional content</a></li>
+    <li><a href="#side-note-on-content-organization-and-urls">Side note on content organization and URLs</a></li>
+  </ul>
+</nav>
 
 
 
@@ -239,13 +245,22 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown book-article"><h1 id="creating-a-home-page">
-  Creating a Home Page
-  <a class="anchor" href="#creating-a-home-page">#</a>
+  <article class="markdown book-article"><h1 id="adding-content-to-your-site">
+  Adding Content to Your Site
+  <a class="anchor" href="#adding-content-to-your-site">#</a>
 </h1>
-<p>For our very first addition to the site, let&rsquo;s add an index page. This is the first page users will see when they visit your site. New pages can be added to your Hugo site with this command:</p>
+<p>All content in a Hugo site is stored in a top-level <code>content/</code> folder. Easy, right? From there, you can create collections of static pages by structuring them in various subfolders, or <a href="https://gohugo.io/content-management/sections/">sections</a>. For example, you could have an &ldquo;about me&rdquo; section and a blog section.</p>
+<blockquote>
+<p><strong>Note:</strong> In order for Hugo to define a folder as a section, it must contain an index file called <code>_index.md</code>. (Don&rsquo;t forget the underscore!) This is called a <a href="https://gohugo.io/content-management/page-bundles/#branch-bundles">branch bundle</a>, and tells Hugo to create a navigable URL for that section and any nested folders within.</p>
+</blockquote>
+<p>For our very first addition we&rsquo;ll create the home page for the site.</p>
+<h2 id="how-to-create-an-index-page">
+  How to create an index page
+  <a class="anchor" href="#how-to-create-an-index-page">#</a>
+</h2>
+<p>To create a Markdown file called <code>_index.md</code> inside <code>content/</code>, run this command:</p>
 <pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">hugo new content content/_index.md
-</code></pre><p>This creates the <code>_index.md</code> Markdown file within the &ldquo;content&rdquo; folder of your Hugo directory. If you open the file in an editor, you&rsquo;ll see that it contains some editable metadata:</p>
+</code></pre><p>If you open the file in an editor, you&rsquo;ll see that it contains some metadata:</p>
 <pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">+++
 date = &#39;2020-02-02T20:20:20-02:00&#39;
 draft = true
@@ -253,43 +268,59 @@ title = &#39;Welcome!&#39;
 +++
 </code></pre><p>You can add body text after this metadata section; however, note that the <code>draft = true</code> value means that Hugo will not publish the page when you build the site. When you&rsquo;re done making your changes, remember to change the value of draft to <code>false</code> so users can actually see the page.</p>
 <p>For a full list of parameters that can be used in the front matter, refer to the <a href="https://github.com/alex-shpak/hugo-book/tree/master?tab=readme-ov-file#configuration">official documentation</a> for the Hugo Book theme under the &ldquo;Configuration&rdquo; section.</p>
-<p>The front matter for the home page of this site looks like this:</p>
+<p>As an example, the front matter for the home page of this site looks like this:</p>
 <pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">+++
 date = &#39;2025-02-06T17:00:38-08:00&#39;
 title = &#39;Welcome to my demo site!&#39;
 BookSection = &#39;docs&#39;
 +++
-</code></pre><h1 id="additional-content-pages">
-  Additional Content Pages
-  <a class="anchor" href="#additional-content-pages">#</a>
-</h1>
-<p>The above process can be repeated to create additional pages in your site. The sections of this site, for example, consist of a series of folders nested under the <code>/content/docs</code> folder. Each subfolder contains an <code>_index.md</code> file that makes up the written content for each page.</p>
+</code></pre><h2 id="adding-additional-content">
+  Adding additional content
+  <a class="anchor" href="#adding-additional-content">#</a>
+</h2>
+<p>The above process can be repeated to create additional pages in your site. The sections of this site, for example, are structured as a series of nested folders within the <code>/content/docs</code> folder. Each subfolder contains an <code>_index.md</code> file that makes up the written content for each page.</p>
 <p>The resulting content tree looks like this:</p>
 <pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">content
 ├── docs
-│   ├── optional-understanding-hugo
-│   │   ├── _index.md
-│   ├── creating-your-hugo-site
-│   │   ├── _index.md
-│   └── installing-a-theme
-│   │   ├── _index.md
-│   └── adding-content-pages
-│   │   ├── _index.md
-│   └── getting-your-site-online
-│   │   ├── _index.md
-│   └── misc-formatting
-│       ├── _index.md
 └── _index.md
+    ├── optional-understanding-hugo
+    │   ├── _index.md
+    ├── creating-your-hugo-site
+    │   ├── _index.md
+    └── installing-a-theme
+    │   ├── _index.md
+    └── adding-content-pages
+    │   ├── _index.md
+    └── getting-your-site-online
+    │   ├── _index.md
+    └── misc-formatting
+        └── _index.md
 </code></pre><p>If you don&rsquo;t want a page to appear in the sidebar, you can specify that in the front matter with the <code>toc_hide</code> flag:</p>
 <pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">toc_hide: true
-</code></pre><p>One thing to note about page names and how they&rsquo;re reflected in the site URL &ndash; when Hugo finds an index.md file it will use the name of its container folder as the post name. If a Markdown file is named anything other than index.md, that will be the post name. This means each of the following will render different:</p>
+</code></pre><h2 id="side-note-on-content-organization-and-urls">
+  Side note on content organization and URLs
+  <a class="anchor" href="#side-note-on-content-organization-and-urls">#</a>
+</h2>
+<p>When structuring your site, it&rsquo;s important to keep in mind that sections define how the URL for each page of your site will look. For example, say your content folder looks like this:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">content
+└── about-me
+    └── _index.md
+    └── my-projects
+        └── project1.md
+</code></pre><p>If the base URL for your site is <code>www.homepage.com</code>, then Hugo would generate these URLs:</p>
 <ul>
-<li><code>/content/docs/example1/_index.md</code> will render as <code>baseurl.com/docs/example1/</code></li>
-<li><code>/content/docs/example2.md</code> will render as <code>baseurl.com/docs/example2/</code></li>
-<li><code>/content/docs/example3/test.md</code> will render as <code>baseurl.com/docs/test/</code></li>
+<li><code>www.homepage.com/about-me/</code></li>
+<li><code>www.homepage.com/about-me/my-projects/project1/</code></li>
+</ul>
+<p>But what happens if you create an index file <em>without</em> the underscore? In that case, Hugo considers the container folder to be a <a href="https://gohugo.io/content-management/page-bundles/#branch-bundles">leaf bundle</a>, and any other <code>.md</code> file in the bundle will not get a corresponding navigable URL.</p>
+<p>Also keep in mind that if a Markdown file is named anything other than index.md, Hugo will use the name of its container folder as the page name. Keeping with our previous example of <code>www.homepage.com</code>, this means each of the following will render differently:</p>
+<ul>
+<li><code>/content/about-me/projects1/index.md</code> becomes <code>homepage.com/about-me/projects1/</code></li>
+<li><code>/content/about-me/projects2.md</code> becomes <code>homepage.com/about-me/projects2/</code></li>
+<li><code>/content/about-me/projects3/result.md</code> becomes <code>homepage.com/about-me/result/</code></li>
 </ul>
 <p>If you want your URLs to follow a certain format, keep these differences in mind when organizing and naming folders in your directory.</p>
-<p>At this point you&rsquo;ve created your Hugo site, installed a theme, and added content. Now it&rsquo;s time for the final step &ndash; <a href="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/" title="Getting Your Site Online">Getting Your Site Online</a>.</p>
+<p>Now, at this point you&rsquo;ve created your Hugo site, installed a theme, and added content. It&rsquo;s time for the final step &ndash; <a href="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/" title="Getting Your Site Online">Getting Your Site Online</a>.</p>
 </article>
  
       
@@ -329,7 +360,13 @@ BookSection = &#39;docs&#39;
       <div class="book-toc-content">
         
   
-<nav id="TableOfContents"></nav>
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-to-create-an-index-page">How to create an index page</a></li>
+    <li><a href="#adding-additional-content">Adding additional content</a></li>
+    <li><a href="#side-note-on-content-organization-and-urls">Side note on content organization and URLs</a></li>
+  </ul>
+</nav>
 
 
  

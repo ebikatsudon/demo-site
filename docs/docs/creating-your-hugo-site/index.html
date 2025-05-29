@@ -7,19 +7,24 @@
   Creating Your Hugo Site
   #
 
-This section will cover how to create a new GitHub repository, how to structure your local file directory for Hugo, and how to manually download and install Hugo.
+This section will cover the following:
+
+How to structure your local file directory for Hugo
+How to manually download and install Hugo
+How to initialize a Git repository locally
+
 
   Step 1: Set up your Hugo file directory
   #
 
-Before installing Hugo, you&rsquo;ll need to prepare the file directory for your site. Create a folder named bin in your user directory with the file path C:\Users\YOUR_USERNAME\bin. Then, add this new bin folder to your system&rsquo;s PATH environment variable now so that when you run Hugo commands later, you won&rsquo;t have to specify the entire path every time.">
+Before installing Hugo, you&rsquo;ll need to prepare the file directory for your site. Create a folder named bin in your user directory with the file path C:\Users\YOUR_USERNAME\bin. Then add this new bin folder to your system&rsquo;s PATH environment variable so that when you run Hugo commands later you won&rsquo;t have to specify the entire path every time.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://ebikatsudon.github.io/demo-site/docs/creating-your-hugo-site/">
   <meta property="og:site_name" content="Demo Hugo Site">
   <meta property="og:title" content="Creating Your Hugo Site">
-  <meta property="og:description" content="Creating Your Hugo Site#This section will cover how to create a new GitHub repository, how to structure your local file directory for Hugo, and how to manually download and install Hugo.
-Step 1: Set up your Hugo file directory#Before installing Hugo, you’ll need to prepare the file directory for your site. Create a folder named bin in your user directory with the file path C:\Users\YOUR_USERNAME\bin. Then, add this new bin folder to your system’s PATH environment variable now so that when you run Hugo commands later, you won’t have to specify the entire path every time.">
+  <meta property="og:description" content="Creating Your Hugo Site#This section will cover the following:
+How to structure your local file directory for Hugo How to manually download and install Hugo How to initialize a Git repository locally Step 1: Set up your Hugo file directory#Before installing Hugo, you’ll need to prepare the file directory for your site. Create a folder named bin in your user directory with the file path C:\Users\YOUR_USERNAME\bin. Then add this new bin folder to your system’s PATH environment variable so that when you run Hugo commands later you won’t have to specify the entire path every time.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 <title>Creating Your Hugo Site | Demo Hugo Site</title>
@@ -28,7 +33,7 @@ Step 1: Set up your Hugo file directory#Before installing Hugo, you’ll need 
 <link rel="canonical" href="https://ebikatsudon.github.io/demo-site/docs/creating-your-hugo-site/">
 <link rel="stylesheet" href="/demo-site/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
   <script defer src="/demo-site/fuse.min.js"></script>
-  <script defer src="/demo-site/en.search.min.fc7ba6fa0e6c756d3aef024fa61d887ae46f7e253857c18c3a3329400088e277.js" integrity="sha256-/Hum&#43;g5sdW067wJPph2IeuRvfiU4V8GMOjMpQACI4nc=" crossorigin="anonymous"></script>
+  <script defer src="/demo-site/en.search.min.30091a5d05b288b36477d80824c47fa92f1c865a37bcdbc6180478bf95c94b4b.js" integrity="sha256-MAkaXQWyiLNkd9gIJMR/qS8chlo3vNvGGAR4v5XJS0s=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://ebikatsudon.github.io/demo-site/docs/creating-your-hugo-site/index.xml" title="Demo Hugo Site" />
 <!--
 Made with Book Theme
@@ -235,19 +240,24 @@ https://github.com/alex-shpak/hugo-book
   Creating Your Hugo Site
   <a class="anchor" href="#creating-your-hugo-site">#</a>
 </h1>
-<p>This section will cover how to create a new GitHub repository, how to structure your local file directory for Hugo, and how to manually download and install Hugo.</p>
+<p>This section will cover the following:</p>
+<ul>
+<li>How to structure your local file directory for Hugo</li>
+<li>How to manually download and install Hugo</li>
+<li>How to initialize a Git repository locally</li>
+</ul>
 <h3 id="step-1-set-up-your-hugo-file-directory">
   Step 1: Set up your Hugo file directory
   <a class="anchor" href="#step-1-set-up-your-hugo-file-directory">#</a>
 </h3>
-<p>Before installing Hugo, you&rsquo;ll need to prepare the file directory for your site. Create a folder named <code>bin</code> in your user directory with the file path <code>C:\Users\YOUR_USERNAME\bin</code>. Then, add this new <code>bin</code> folder to your system&rsquo;s PATH environment variable now so that when you run Hugo commands later, you won&rsquo;t have to specify the entire path every time.</p>
-<p>Whenever you edit your PATH, however, it&rsquo;s recommended to first create a backup:</p>
+<p>Before installing Hugo, you&rsquo;ll need to prepare the file directory for your site. Create a folder named <code>bin</code> in your user directory with the file path <code>C:\Users\YOUR_USERNAME\bin</code>. Then add this new <code>bin</code> folder to your system&rsquo;s PATH environment variable so that when you run Hugo commands later you won&rsquo;t have to specify the entire path every time.</p>
+<p>Before editing your PATH, it&rsquo;s recommended to first create a backup:</p>
 <ol>
 <li>Navigate to <code>System Properties</code> -&gt; <code>Advanced system settings</code> -&gt; <code>Advanced</code> tab -&gt; <code>Environment Variables</code>.</li>
 <li>Select the <code>PATH</code> variable under &ldquo;System Variables.&rdquo; Click &ldquo;Edit,&rdquo; then &ldquo;Edit text.&rdquo; Copy the entire value in &ldquo;Variable value&rdquo; and paste it into a text file editor such as Notepad.</li>
 <li>Save the file. If you need to restore the PATH, you can copy+paste the text back into the &ldquo;Variable value.&rdquo;</li>
 </ol>
-<p>Now that your PATH is backed up, open the command line as administrator. To add your newly-created bin folder to the PATH, run the following:
+<p>Now that your PATH is backed up, open the command line as administrator. To add the bin folder you just created to the PATH, run the following:
 <code>setx PATH &quot;C:\Users\YOUR_USERNAME\bin;%PATH%&quot;</code>. You can check if the directory was added successfully by running <code>echo %PATH%</code>, which will output the full value.</p>
 <h3 id="step-2-download-and-install-hugo">
   Step 2: Download and install Hugo
@@ -268,15 +278,16 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#step-3-check-that-your-installation-was-successful">#</a>
 </h3>
 <p>To confirm that Hugo is now in the PATH, run the following in the command line: <code>hugo version</code>. The output should show the version of Hugo you installed.</p>
-<p>Here&rsquo;s an example output:</p>
+<p>Here&rsquo;s an example output showing that Hugo v0.142.0 was installed:</p>
 <pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">hugo v0.142.0-1f746a872442e66b6afd47c8c04ac42dc92cdb6f+extended windows/amd64 BuildDate=2025-01-22T12:20:52Z VendorInfo=gohugoio
 </code></pre><h3 id="step-4-initialize-your-hugo-site">
   Step 4: Initialize your Hugo site
   <a class="anchor" href="#step-4-initialize-your-hugo-site">#</a>
 </h3>
-<p>Now that Hugo is installed, you can start creating your new website. In this tutorial we&rsquo;ll call the new site <code>demo-site</code>, but you can name it however you like.</p>
-<p>To create your Hugo site, open Git and run the following: <code>hugo new site demo-site</code>.</p>
-<p>If the site is created successfully, you&rsquo;ll get a message instructing you to install a theme as your next step.</p>
+<p>Now that Hugo is installed you can start creating your new website. In this tutorial we&rsquo;ll call the new site <code>demo-site</code>, but you can name it however you like.</p>
+<p>To create your Hugo site, open Git and run the following:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">hugo new site demo-site
+</code></pre><p>If the site is created successfully, you&rsquo;ll get a message instructing you to install a theme as your next step.</p>
 <pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">PS C:\Users\Username&gt; hugo new site demo-site
 Congratulations! Your new Hugo site was created in C:\Users\Username\demo-site.
 
@@ -291,6 +302,11 @@ Just a few more steps...
 5. Start the embedded web server with the command &#34;hugo server --buildDrafts&#34;.
 
 See documentation at https://gohugo.io/.
+</code></pre><p>Next navigate to your newly-created directory, initialize an empty Git repository, and make a commit. This allows Git to start tracking your changes and also sets things up for installing a theme later:</p>
+<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">cd demo-site
+git init
+git add .
+git commit -m &#34;Adding site to Git&#34;
 </code></pre><h2 id="testing-your-site">
   Testing your site
   <a class="anchor" href="#testing-your-site">#</a>

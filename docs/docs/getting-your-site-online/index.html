@@ -7,13 +7,13 @@
   Uploading Your Site Via GitHub Pages
   #
 
-So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready to deploy it for all the world to see. There are a whole host of ways you can do so &ndash; check out all the ways listed on the Hugo site here &ndash; but for this tutorial, we&rsquo;re using GitHub Pages. This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you&rsquo;ve followed the tutorial up to this point.">
+So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready to deploy it for all the world to see. There are a host of ways you can do so &ndash; check out all the ways listed on the Hugo site here &ndash; but for this tutorial, we&rsquo;re using GitHub Pages. This is a free option that eliminates the need to buy a custom domain. On top of that, everything can be done using Git Bash, which you should already have some familiarity with if you&rsquo;ve followed the tutorial up to this point.">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/">
   <meta property="og:site_name" content="Demo Hugo Site">
   <meta property="og:title" content="Getting Your Site Online">
-  <meta property="og:description" content="Uploading Your Site Via GitHub Pages#So you’ve finished building your site locally, and now you’re ready to deploy it for all the world to see. There are a whole host of ways you can do so – check out all the ways listed on the Hugo site here – but for this tutorial, we’re using GitHub Pages. This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you’ve followed the tutorial up to this point.">
+  <meta property="og:description" content="Uploading Your Site Via GitHub Pages#So you’ve finished building your site locally, and now you’re ready to deploy it for all the world to see. There are a host of ways you can do so – check out all the ways listed on the Hugo site here – but for this tutorial, we’re using GitHub Pages. This is a free option that eliminates the need to buy a custom domain. On top of that, everything can be done using Git Bash, which you should already have some familiarity with if you’ve followed the tutorial up to this point.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 <title>Getting Your Site Online | Demo Hugo Site</title>
@@ -22,7 +22,7 @@ So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready 
 <link rel="canonical" href="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/">
 <link rel="stylesheet" href="/demo-site/book.min.434035e7885c7f5d12818bd9f111cf1a0925c6fb78382667381c3d5eda3fb4f1.css" integrity="sha256-Q0A154hcf10SgYvZ8RHPGgklxvt4OCZnOBw9Xto/tPE=" crossorigin="anonymous">
   <script defer src="/demo-site/fuse.min.js"></script>
-  <script defer src="/demo-site/en.search.min.fc7ba6fa0e6c756d3aef024fa61d887ae46f7e253857c18c3a3329400088e277.js" integrity="sha256-/Hum&#43;g5sdW067wJPph2IeuRvfiU4V8GMOjMpQACI4nc=" crossorigin="anonymous"></script>
+  <script defer src="/demo-site/en.search.min.30091a5d05b288b36477d80824c47fa92f1c865a37bcdbc6180478bf95c94b4b.js" integrity="sha256-MAkaXQWyiLNkd9gIJMR/qS8chlo3vNvGGAR4v5XJS0s=" crossorigin="anonymous"></script>
 <link rel="alternate" type="application/rss+xml" href="https://ebikatsudon.github.io/demo-site/docs/getting-your-site-online/index.xml" title="Demo Hugo Site" />
 <!--
 Made with Book Theme
@@ -229,50 +229,37 @@ https://github.com/alex-shpak/hugo-book
   Uploading Your Site Via GitHub Pages
   <a class="anchor" href="#uploading-your-site-via-github-pages">#</a>
 </h1>
-<p>So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready to deploy it for all the world to see. There are a whole host of ways you can do so &ndash; check out all the ways listed on the Hugo site <a href="https://gohugo.io/host-and-deploy/">here</a> &ndash; but for this tutorial, we&rsquo;re using <a href="https://pages.github.com/">GitHub Pages</a>. This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you&rsquo;ve followed the tutorial up to this point.</p>
-<h3 id="step-1-initialize-your-site-in-git">
-  Step 1: Initialize Your Site in Git
-  <a class="anchor" href="#step-1-initialize-your-site-in-git">#</a>
-</h3>
-<p>In Git, navigate to your site directory. Then run the following:</p>
-<pre tabindex="0"><code class="language-pseudo" data-lang="pseudo">git init
-git add .
-git commit -m &#34;Adding site to Git&#34;
-</code></pre><p>This creates an empty Git repository in your site directory and tells Git to start tracking your files.</p>
-<h3 id="step-2-create-and-link-a-github-repository">
-  Step 2: Create and Link a GitHub Repository
-  <a class="anchor" href="#step-2-create-and-link-a-github-repository">#</a>
+<p>So you&rsquo;ve finished building your site locally, and now you&rsquo;re ready to deploy it for all the world to see. There are a host of ways you can do so &ndash; check out all the ways listed on the Hugo site <a href="https://gohugo.io/host-and-deploy/">here</a> &ndash; but for this tutorial, we&rsquo;re using <a href="https://pages.github.com/">GitHub Pages</a>. This is a free option that eliminates the need to buy a custom domain. On top of that, everything can be done using Git Bash, which you should already have some familiarity with if you&rsquo;ve followed the tutorial up to this point.</p>
+<h3 id="step-1-create-and-link-a-github-repository">
+  Step 1: Create and link a GitHub repository
+  <a class="anchor" href="#step-1-create-and-link-a-github-repository">#</a>
 </h3>
 <p>To host your site on GitHub Pages you&rsquo;ll need a repository to store it. Log in to your GitHub account and click the + icon in the top right, then select &ldquo;New Repository.&rdquo; Give your repository the same name as your local Hugo directory &ndash; i.e., if the folder containing your site files is called &ldquo;Example Site,&rdquo; the corresponding repository on GitHub should also be called &ldquo;Example Site.&rdquo; Also set the repository to &ldquo;public&rdquo; and uncheck the box for &ldquo;Add a README file&rdquo; before creating it.</p>
 <p>Once your repository is created, GitHub will display an HTML link that ends in <code>.git</code>. Copy that link. Now you can link the repository you just created on GitHub to your local one with the following Git command, replacing the HTML link with the one you copied:</p>
 <pre tabindex="0"><code class="language-git" data-lang="git">git remote add origin https://github.com/yourusername/repo-name.git
 </code></pre><p>Additionally, you may need to rename your branch from &ldquo;master&rdquo; to &ldquo;main&rdquo; to match GitHub&rsquo;s default directory structure:</p>
 <pre tabindex="0"><code class="language-git" data-lang="git">git branch -M main
-</code></pre><h3 id="step-3-update-and-push-your-site">
-  Step 3: Update and Push Your Site
-  <a class="anchor" href="#step-3-update-and-push-your-site">#</a>
+</code></pre><h3 id="step-2-update-and-push-your-site">
+  Step 2: Update and push your site
+  <a class="anchor" href="#step-2-update-and-push-your-site">#</a>
 </h3>
 <p>Open the Hugo config file in your local directory and replace the default <code>baseURL</code> value with the URL for your site. Since this will be a project page and not a user page, it should look something like <code>baseURL = 'https://username.github.io/site-name/'</code>.</p>
 <p>Save and commit your changes and run the <code>hugo</code> command to build the latest version of your site. When your site is finalized locally, you can push it to GitHub:</p>
 <pre tabindex="0"><code class="language-git" data-lang="git">git push -u origin main
-</code></pre><h3 id="step-4-finalize-your-site">
-  Step 4: Finalize Your Site
-  <a class="anchor" href="#step-4-finalize-your-site">#</a>
+</code></pre><h3 id="step-3-finalize-your-site">
+  Step 3: Finalize your site
+  <a class="anchor" href="#step-3-finalize-your-site">#</a>
 </h3>
 <p>Almost done! Access your GitHub repository online and go to Settings &gt; Pages. Under &ldquo;Source&rdquo; select &ldquo;Deploy from a branch,&rdquo; then select &ldquo;main&rdquo; and &ldquo;/docs&rdquo; under &ldquo;Branch.&rdquo; Save your changes, and GitHub should now indicate that it&rsquo;s serving your website from the &ldquo;main&rdquo; branch.</p>
 <p>Congratulations, you now have a working static site hosted on GitHub Pages! Your site should be accessible at <code>https://yourusername.github.io/site-name</code>.</p>
-<p>With just this basic Hugo and Git knowledge under your belt, you&rsquo;re ready to create some truly amazing webpages to show off your content. Thank you for reading this far! If you&rsquo;d like to learn some formatting tips for making your site look pretty, check out the <a href="https://ebikatsudon.github.io/demo-site/docs/misc-formatting/" title="Misc Formatting">Misc Formatting</a> section for tips. Otherwise, to learn more about me and my projects, check out my personal page.</p>
-<h3 id="bonus-how-to-update-your-site-in-the-future">
-  Bonus: How to Update Your Site in the Future
-  <a class="anchor" href="#bonus-how-to-update-your-site-in-the-future">#</a>
-</h3>
-<p>You can easily make changes to your site even after it&rsquo;s been published on GitHub Pages. The process essentially just involves repeating the last few steps you did to deploy it in the first place:</p>
+<p>If you want to make updates in the future, all you have to do is repeat the last few steps you did to deploy you site in the first place:</p>
 <ol>
-<li>Add and commit your changes locally</li>
+<li>Save all your changes locally</li>
 <li>Run <code>hugo</code> to rebuild the site</li>
+<li>Add and commit your changes</li>
 <li><code>git push</code> to the remote repository</li>
 </ol>
-<p>After that, your changes should be reflected online shortly.</p>
+<p>With just this basic Hugo and Git knowledge under your belt, you&rsquo;re ready to create some truly amazing webpages to show off your content. Thank you for reading this far! If you&rsquo;d like to learn some formatting tips for making your site look pretty, check out the <a href="https://ebikatsudon.github.io/demo-site/docs/misc-formatting/" title="Misc Formatting">Misc Formatting</a> section for tips. Otherwise, to learn more about me and my projects, check out my personal page.</p>
 </article>
  
       

@@ -6,7 +6,7 @@ BookSection = 'docs'
 
 # Hi there!
 ------
-This is a demo site built for practice using Hugo and hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages). The following pages document the process used in order to create this exact site. I'm still extremely new to everything Hugo has to offer, but I hope this site may prove helpful for any other newbies looking for simple, clear instructions on how to get started with Hugo.
+This is a demo site built for practice using Hugo and hosted on [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages). Each page of this site documents the step-by-step process used in order to create the site exactly as you see it. I'm still extremely new to everything Hugo has to offer, but I hope the instructions here may prove helpful for any other newbies looking for simple, clear guidance on how to get started with Hugo.
 
 If you're interested in recreating this site on your own, you'll need the following:
 
@@ -18,4 +18,6 @@ If you're interested in recreating this site on your own, you'll need the follow
 
 This guide also assumes you have some basic knowledge of Git and GitHub. Don't worry though -- every command used in Git is documented, so you can just copy and paste the code into your terminal.
 
-To get started, click on [Creating Your Hugo Site]({{< ref "/docs/creating-your-hugo-site" >}} "Creating Your Hugo Site") on the left sidebar to learn how to download, install, and use Hugo to create a bare-bones site.
+If you'd like to learn a bit more about how Hugo works as a static site generator, click on [Understanding Hugo]({{< ref "/docs/optional-understanding-hugo" >}} "Understanding Hugo") in the left sidebar.
+
+Otherwise, if you want to jump straight into building your site, instead head over to [Creating Your Hugo Site]({{< ref "/docs/creating-your-hugo-site" >}} "Creating Your Hugo Site") in the left sidebar to learn how to download and install Hugo.

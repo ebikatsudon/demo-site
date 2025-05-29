@@ -6,19 +6,22 @@ weight = 20
 +++
 # Creating Your Hugo Site
 
-This section will cover how to create a new GitHub repository, how to structure your local file directory for Hugo, and how to manually download and install Hugo.
+This section will cover the following:
+- How to structure your local file directory for Hugo
+- How to manually download and install Hugo
+- How to initialize a Git repository locally
 
 ### Step 1: Set up your Hugo file directory
 
-Before installing Hugo, you'll need to prepare the file directory for your site. Create a folder named `bin` in your user directory with the file path `C:\Users\YOUR_USERNAME\bin`. Then, add this new `bin` folder to your system's PATH environment variable now so that when you run Hugo commands later, you won't have to specify the entire path every time.
+Before installing Hugo, you'll need to prepare the file directory for your site. Create a folder named `bin` in your user directory with the file path `C:\Users\YOUR_USERNAME\bin`. Then add this new `bin` folder to your system's PATH environment variable so that when you run Hugo commands later you won't have to specify the entire path every time.
 
-Whenever you edit your PATH, however, it's recommended to first create a backup:
+Before editing your PATH, it's recommended to first create a backup:
 
  1. Navigate to `System Properties` -> `Advanced system settings` -> `Advanced` tab -> `Environment Variables`.
  2. Select the `PATH` variable under "System Variables." Click "Edit," then "Edit text." Copy the entire value in "Variable value" and paste it into a text file editor such as Notepad.
  3. Save the file. If you need to restore the PATH, you can copy+paste the text back into the "Variable value."
 
- Now that your PATH is backed up, open the command line as administrator. To add your newly-created bin folder to the PATH, run the following: 
+ Now that your PATH is backed up, open the command line as administrator. To add the bin folder you just created to the PATH, run the following: 
  `setx PATH "C:\Users\YOUR_USERNAME\bin;%PATH%"`. You can check if the directory was added successfully by running `echo %PATH%`, which will output the full value.
 
 ### Step 2: Download and install Hugo
@@ -38,7 +41,7 @@ Download the extended version of Hugo from the repository and extract its conten
 
 To confirm that Hugo is now in the PATH, run the following in the command line: `hugo version`. The output should show the version of Hugo you installed.
 
-Here's an example output:
+Here's an example output showing that Hugo v0.142.0 was installed:
 
 ```pseudo
 hugo v0.142.0-1f746a872442e66b6afd47c8c04ac42dc92cdb6f+extended windows/amd64 BuildDate=2025-01-22T12:20:52Z VendorInfo=gohugoio
@@ -46,9 +49,13 @@ hugo v0.142.0-1f746a872442e66b6afd47c8c04ac42dc92cdb6f+extended windows/amd64 Bu
 
 ### Step 4: Initialize your Hugo site
 
-Now that Hugo is installed, you can start creating your new website. In this tutorial we'll call the new site `demo-site`, but you can name it however you like.
+Now that Hugo is installed you can start creating your new website. In this tutorial we'll call the new site `demo-site`, but you can name it however you like.
 
-To create your Hugo site, open Git and run the following: `hugo new site demo-site`.
+To create your Hugo site, open Git and run the following:
+
+```pseudo
+hugo new site demo-site
+```
 
 If the site is created successfully, you'll get a message instructing you to install a theme as your next step.
 
@@ -67,6 +74,15 @@ Just a few more steps...
 5. Start the embedded web server with the command "hugo server --buildDrafts".
 
 See documentation at https://gohugo.io/.
+```
+
+Next navigate to your newly-created directory, initialize an empty Git repository, and make a commit. This allows Git to start tracking your changes and also sets things up for installing a theme later:
+
+```pseudo
+cd demo-site
+git init
+git add .
+git commit -m "Adding site to Git"
 ```
 
 ## Testing your site

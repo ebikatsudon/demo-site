@@ -7,21 +7,9 @@ weight = 40
 
 # Uploading Your Site Via GitHub Pages
 
-So you've finished building your site locally, and now you're ready to deploy it for all the world to see. There are a whole host of ways you can do so -- check out all the ways listed on the Hugo site [here](https://gohugo.io/host-and-deploy/) -- but for this tutorial, we're using [GitHub Pages](https://pages.github.com/). This is a free option that eliminates the need to buy a custom domain. On top of that everything can be done using Git Bash, which you should already have some familiarity with if you've followed the tutorial up to this point.
+So you've finished building your site locally, and now you're ready to deploy it for all the world to see. There are a host of ways you can do so -- check out all the ways listed on the Hugo site [here](https://gohugo.io/host-and-deploy/) -- but for this tutorial, we're using [GitHub Pages](https://pages.github.com/). This is a free option that eliminates the need to buy a custom domain. On top of that, everything can be done using Git Bash, which you should already have some familiarity with if you've followed the tutorial up to this point.
 
-### Step 1: Initialize Your Site in Git
-
-In Git, navigate to your site directory. Then run the following: 
-
-```pseudo
-git init
-git add .
-git commit -m "Adding site to Git"
-```
-
-This creates an empty Git repository in your site directory and tells Git to start tracking your files.
-
-### Step 2: Create and Link a GitHub Repository
+### Step 1: Create and link a GitHub repository
 
 To host your site on GitHub Pages you'll need a repository to store it. Log in to your GitHub account and click the + icon in the top right, then select "New Repository." Give your repository the same name as your local Hugo directory -- i.e., if the folder containing your site files is called "Example Site," the corresponding repository on GitHub should also be called "Example Site." Also set the repository to "public" and uncheck the box for "Add a README file" before creating it.
 
@@ -37,7 +25,7 @@ Additionally, you may need to rename your branch from "master" to "main" to matc
 git branch -M main
 ```
 
-### Step 3: Update and Push Your Site
+### Step 2: Update and push your site
 
 Open the Hugo config file in your local directory and replace the default `baseURL` value with the URL for your site. Since this will be a project page and not a user page, it should look something like `baseURL = 'https://username.github.io/site-name/'`.
 
@@ -47,20 +35,17 @@ Save and commit your changes and run the `hugo` command to build the latest vers
 git push -u origin main
 ```
 
-### Step 4: Finalize Your Site
+### Step 3: Finalize your site
 
 Almost done! Access your GitHub repository online and go to Settings > Pages. Under "Source" select "Deploy from a branch," then select "main" and "/docs" under "Branch." Save your changes, and GitHub should now indicate that it's serving your website from the "main" branch.
 
 Congratulations, you now have a working static site hosted on GitHub Pages! Your site should be accessible at `https://yourusername.github.io/site-name`.
 
- With just this basic Hugo and Git knowledge under your belt, you're ready to create some truly amazing webpages to show off your content. Thank you for reading this far! If you'd like to learn some formatting tips for making your site look pretty, check out the [Misc Formatting]({{< ref "/docs/misc-formatting" >}} "Misc Formatting") section for tips. Otherwise, to learn more about me and my projects, check out my personal page.
+If you want to make updates in the future, all you have to do is repeat the last few steps you did to deploy you site in the first place:
 
- ### Bonus: How to Update Your Site in the Future
-
-You can easily make changes to your site even after it's been published on GitHub Pages. The process essentially just involves repeating the last few steps you did to deploy it in the first place:
-
-1. Add and commit your changes locally
+1. Save all your changes locally
 2. Run `hugo` to rebuild the site
-3. `git push` to the remote repository
+3. Add and commit your changes
+4. `git push` to the remote repository
 
-After that, your changes should be reflected online shortly.
+With just this basic Hugo and Git knowledge under your belt, you're ready to create some truly amazing webpages to show off your content. Thank you for reading this far! If you'd like to learn some formatting tips for making your site look pretty, check out the [Misc Formatting]({{< ref "/docs/misc-formatting" >}} "Misc Formatting") section for tips. Otherwise, to learn more about me and my projects, check out my personal page.
