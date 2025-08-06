@@ -53,7 +53,7 @@ The syntax for `ref` and `relref` is as follows:
 {{</* relref "#anchor" */>}}
 {{</* relref "example.md#anchor" */>}}
 ```
-`ref` and `relref` can be used in conjunction Markdown to create hyperlinks. A hyperlink that references the "Creating Your Hugo Site" page, for example, would look like the following in Markdown:
+`ref` and `relref` can be used in conjunction with Markdown to create hyperlinks. A hyperlink that references the "Creating Your Hugo Site" page, for example, would look like the following in Markdown:
 
 ```pseudo
 [Creating Your Hugo Site]({{< ref "/docs/creating-your-hugo-site" >}} "Creating Your Hugo Site") 
